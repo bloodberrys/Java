@@ -8,7 +8,7 @@
             "args": [
                 "-cp",
                 "./bin",
-                "com.tutorial.DragonNest"
+                "com.tutorial.Calc"
             ],
             "group": {
                 "kind": "build",

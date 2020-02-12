@@ -88,7 +88,7 @@ public class Calc{
     public static void main(String[] args) {
 
         // membuat peoperty baru
-
+        int pilihan;
         double a;
         double b;
 
@@ -97,6 +97,16 @@ public class Calc{
 
 
         System.out.println("---Calculator v.0.0.1 by Alfian Firmansyah---\n");
+
+        System.out.println("-------");
+        System.out.println("------------");
+        System.out.println("Pilih Operasi:\n");
+        System.out.println("1. Penjumlahan\n");
+        System.out.println("2. Pengurangan\n");
+        System.out.println("3. Perkalian\n");
+        System.out.println("4. Pembagian\n");
+        System.out.println("Pilihan Kamu: "); pilihan = input.nextInt();
+
         System.out.println("Masukkan angka pertama: ");
 
         // menginput dengan tipe data double
@@ -110,19 +120,20 @@ public class Calc{
 
         // pembuatan object tambah, kurang, kali, bagi
         Tambah add1 = new Tambah(a, b);
-
-        // memanggil method display yang terdapat pada class Tambah pada object add1
-        add1.display();
-        System.out.println("\n");
-
-        // akan dilakukan pembuatan object lain dan pemanggilan method yang memiliki pola yang sama dengan di atas
         Kurang kurang1 = new Kurang(a , b);
-        kurang1.display();
-        System.out.println("\n");
         Kali kali1 = new Kali(a , b);
-        kali1.display();
-        System.out.println("\n");
         Bagi bagi1 = new Bagi(a , b);
-        bagi1.display();
+
+        // memanggil method display yang terdapat pada class Tambah pada object-object yang sudah dibuat dengan menggunakan if statement
+
+        if (pilihan == 1){
+            add1.display();
+        }else if(pilihan == 2){// akan dilakukan pemanggilan method display yang memiliki pola yang sama dengan di atas
+            kurang1.display();
+        }else if(pilihan == 3){
+            kali1.display();
+        }else if(pilihan == 4){
+            bagi1.display();
+        }
     }
 }
