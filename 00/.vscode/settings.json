@@ -1,0 +1,14 @@
+{
+    "editor.fontsize": 18,
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "vscode-icons",
+    "cSpell.words": [
+        "Mahasiswa"
+    ],
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    }
+}
